@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- 정식 오픈 시 이 줄 삭제 -->
 <title>남성역 헤머튼 지역주택조합 | 조합원 모집</title>
 <meta name="description" content="서울 동작구 사당동 277-1번지 일원, 7호선 남성역 역세권 934세대. 남성역 헤머튼 지역주택조합 조합원 모집 안내.">
 <meta property="og:title" content="남성역 헤머튼 지역주택조합">
@@ -29,6 +30,7 @@
   --todo:#FFF3B0;
   --en:"Cormorant Garamond","Times New Roman",serif;
   --script:"Allura",cursive;
+  --gutter:24px;
   --sans:"Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -38,7 +40,7 @@ img{max-width:100%;display:block}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
 .narrow{max-width:720px;margin:0 auto;padding:0 24px}
 .center{text-align:center}
 .todo{background:var(--todo);color:#5A4A00;padding:1px 6px;border-radius:3px;font-size:.86em;font-weight:600;white-space:nowrap}
@@ -105,21 +107,21 @@ body.drawer-open{overflow:hidden}
 }
 
 /* LOCATION 인트로 — 브라운 밴드 + 스크립트 워터마크 */
-.loc-intro{background:var(--brown);color:#fff;text-align:center;padding:84px 0 150px;position:relative;overflow:hidden}
+.loc-intro{background:var(--brown);color:#fff;text-align:center;padding:84px var(--gutter) 150px;position:relative;overflow:hidden}
 .loc-intro .script{position:absolute;left:50%;top:34px;transform:translateX(-50%);font-size:clamp(84px,12vw,140px);color:rgba(217,198,165,.16);white-space:nowrap;pointer-events:none}
 .loc-intro .kicker{position:relative;font-size:17px;font-weight:600;color:var(--gold-soft)}
 .loc-intro h2{position:relative;margin-top:8px;font-size:clamp(26px,3.4vw,38px);font-weight:800;line-height:1.35}
 .loc-intro p{position:relative;margin:22px auto 0;max-width:34em;font-size:15px;color:#D6CFC0}
-.map-card{position:relative;max-width:1080px;margin:-100px auto 0;padding:0 24px}
+.map-card{position:relative;max-width:1080px;margin:-100px auto 0;padding:0 var(--gutter)}
 .map-card figure{position:relative;background:#fff;border-radius:22px 22px 0 0;overflow:hidden;box-shadow:0 18px 40px rgba(30,27,20,.18)}
 .map-card img{width:100%}
 .map-card .more{position:absolute;left:0;bottom:0;background:var(--brown-2);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 18px;text-decoration:none}
-.map-notes{max-width:1080px;margin:0 auto;padding:18px 24px 56px;font-size:12.5px;color:var(--muted)}
+.map-notes{max-width:1080px;margin:0 auto;padding:18px var(--gutter) 56px;font-size:12.5px;color:var(--muted)}
 .map-notes li{list-style:none;padding-left:.9em;text-indent:-.9em;margin:3px 0}
 .map-notes li::before{content:"※ "}
 
 /* 이동시간 필 — 레퍼런스의 '15분대' 칩 */
-.times{background:var(--stone);padding:56px 0 64px}
+.times{background:var(--stone);padding:56px var(--gutter) 64px}
 .times ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px 20px;max-width:760px;margin:0 auto}
 .times li{background:#fff;border-radius:999px;display:flex;align-items:center;gap:14px;padding:12px 26px 12px 12px}
 .times .ico{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center}
@@ -143,17 +145,17 @@ body.drawer-open{overflow:hidden}
 .tag{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 7px;margin-left:6px;vertical-align:1px}
 .tag-now{background:var(--brown);color:#fff}
 .tag-plan{border:1px solid var(--gold);color:#8A6D40}
-@media (max-width:700px){.chapter{grid-template-columns:1fr;padding:30px 24px}.chapter .no{justify-self:end;order:-1;margin-bottom:-10px}.chapters{padding:48px 16px 64px}}
+@media (max-width:700px){.chapter{grid-template-columns:1fr;padding:30px 22px}.chapter .no{justify-self:end;order:-1;margin-bottom:-10px}.chapters{padding:48px var(--gutter) 64px}}
 
 /* PREMIUM */
-.premium-head{padding:104px 0 56px;text-align:right}
+.premium-head{padding-top:104px;padding-bottom:56px;text-align:right}
 .premium-head .sub{font-size:17px;color:var(--muted)}
 .premium-head .name{font-size:20px;font-weight:700;color:#8A6D40;margin-top:10px}
 .premium-head .en-display{font-size:clamp(56px,9vw,112px);margin-top:14px;letter-spacing:.12em}
 .premium-head .rule{display:inline-block;width:56px;height:2px;background:var(--brown);margin-top:36px}
 .premium-img img{width:100%;max-height:640px;object-fit:cover;object-position:50% 40%}
-.premium-img figcaption{font-size:11.5px;color:var(--muted);text-align:right;padding:8px 24px 0}
-.spec-wrap{padding:72px 0 104px}
+.premium-img figcaption{font-size:11.5px;color:var(--muted);text-align:right;padding:8px var(--gutter) 0}
+.spec-wrap{padding-top:72px;padding-bottom:104px}
 .stat-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--brown);border-bottom:1px solid var(--line)}
 .stat-row div{padding:28px 12px;text-align:center}
 .stat-row div + div{border-left:1px solid var(--line)}
@@ -163,7 +165,7 @@ body.drawer-open{overflow:hidden}
 .spec div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
 .spec dt{color:var(--muted)}
 .fine{font-size:12.5px;color:var(--muted);margin-top:18px}
-@media (max-width:760px){.premium-img img{min-height:300px}.map-card{padding:0 12px}.stat-row{grid-template-columns:repeat(2,1fr)}.stat-row div:nth-child(3){border-left:0}.stat-row div:nth-child(n+3){border-top:1px solid var(--line)}.spec{grid-template-columns:1fr}.premium-head{text-align:center}}
+@media (max-width:760px){.premium-img img{min-height:300px}.map-card{padding:0 var(--gutter)}.stat-row{grid-template-columns:repeat(2,1fr)}.stat-row div:nth-child(3){border-left:0}.stat-row div:nth-child(n+3){border-top:1px solid var(--line)}.spec{grid-template-columns:1fr}.premium-head{text-align:center}}
 
 /* PROGRESS — 텍스처 다크 섹션 (BRAND PHILOSOPHY 형식) */
 .dark{position:relative;background-color:#34302A;color:#E8E3D8;padding:104px 0 112px;
@@ -223,7 +225,7 @@ body.drawer-open{overflow:hidden}
 .form .btn{width:100%;background:var(--brown);color:#fff}
 .form .btn:hover{background:var(--brown-2)}
 .form-msg{margin-top:10px;font-size:14px;min-height:1.4em}
-@media (max-width:860px){.contact{padding:48px 16px}.contact-card{grid-template-columns:1fr;padding:36px 22px;gap:32px}}
+@media (max-width:860px){.contact{padding:48px var(--gutter)}.contact-card{grid-template-columns:1fr;padding:36px 22px;gap:32px}}
 
 /* 푸터 */
 .site-footer{background:#1F1C15;color:#A9A18F;font-size:13px;padding:48px 0 64px}
@@ -235,12 +237,13 @@ body.drawer-open{overflow:hidden}
 
 .mobile-cta{display:none}
 @media (max-width:700px){
+  :root{--gutter:20px}
   .mobile-cta{display:grid;grid-template-columns:1fr;position:fixed;left:0;right:0;bottom:0;z-index:60}
   .mobile-cta a{text-align:center;padding:15px 0;font-weight:700;text-decoration:none}
   .mobile-cta .c1{background:var(--gold);color:var(--brown)}
   .mobile-cta .c2{background:var(--brown);color:#fff}
   body{padding-bottom:52px}
-  .premium-head,.guide-sec{padding:72px 0 40px}
+  .premium-head{padding-top:72px;padding-bottom:40px}.guide-sec{padding-top:72px;padding-bottom:40px}
   .dark{padding:72px 0 80px}
 }
 </style>
