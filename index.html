@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>남성역 헤머튼 지역주택조합 | 조합원 모집</title>
+<meta name="description" content="서울 동작구 사당동 277-1번지 일원, 7호선 남성역 역세권 934세대. 남성역 헤머튼 지역주택조합 조합원 모집 안내.">
+<meta property="og:title" content="남성역 헤머튼 지역주택조합">
+<meta property="og:description" content="7호선 남성역 역세권, 지하 4층~지상 39층 6개동 934세대. 지역주택조합 조합원 모집 광고입니다.">
+<meta property="og:image" content="assets/hero-1200.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --brown:#2B271D;
+  --brown-2:#3A3528;
+  --gold:#B8976A;
+  --gold-soft:#D9C6A5;
+  --stone:#D8D5CE;        /* 레퍼런스의 웜 그레이 밴드 */
+  --stone-2:#EEEDE9;
+  --paper:#FFFFFF;
+  --text:#1E1B14;
+  --muted:#6B6558;
+  --faint:#C9C4B8;
+  --line:#DAD6CC;
+  --todo:#FFF3B0;
+  --en:"Cormorant Garamond","Times New Roman",serif;
+  --script:"Allura",cursive;
+  --sans:"Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.narrow{max-width:720px;margin:0 auto;padding:0 24px}
+.center{text-align:center}
+.todo{background:var(--todo);color:#5A4A00;padding:1px 6px;border-radius:3px;font-size:.86em;font-weight:600;white-space:nowrap}
+
+/* 영문 디스플레이 — 레퍼런스의 얇은 대문자 세리프 */
+.en-display{font-family:var(--en);font-weight:300;letter-spacing:.08em;line-height:1;color:var(--brown)}
+.script{font-family:var(--script);font-weight:400;line-height:1}
+
+/* 고지 띠 + 헤더 */
+.notice-bar{background:#1F1C15;color:var(--gold-soft);font-size:12.5px;text-align:center;padding:6px 16px}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.site-header .bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:60px;max-width:1280px;margin:0 auto;padding:0 16px}
+.brand{text-decoration:none;display:flex;flex-direction:column;align-items:center;line-height:1.1}
+.brand-mark{font-family:var(--en);font-weight:500;font-size:24px;letter-spacing:.2em;color:var(--brown)}
+.brand-sub{font-size:11px;color:var(--muted);margin-top:3px}
+.menu-btn{justify-self:start;display:flex;align-items:center;gap:10px;background:none;border:0;height:44px;padding:0 6px;cursor:pointer;font:inherit;font-size:13px;font-weight:600;color:var(--brown)}
+.menu-btn .bars{width:24px}
+.menu-btn .bars span{display:block;height:1.5px;background:var(--brown);margin:6px 0}
+.header-cta{justify-self:end;display:inline-flex;align-items:center;gap:6px;background:var(--brown);color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:10px 18px;white-space:nowrap}
+.header-cta:hover{background:var(--brown-2)}
+.header-cta svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8}
+@media (max-width:520px){.site-header .bar{padding:0 10px}.menu-btn .label,.brand-sub,.header-cta svg{display:none}.header-cta{padding:9px 12px;font-size:13px}.site-header .brand-mark{font-size:18px;letter-spacing:.14em}}
+
+/* 좌측 드로어 메뉴 */
+.drawer-dim{position:fixed;inset:0;z-index:70;background:rgba(30,27,20,.45);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.drawer{position:fixed;top:0;left:0;bottom:0;z-index:71;width:min(340px,86vw);background:var(--brown);color:#fff;transform:translateX(-100%);transition:transform .3s ease;display:flex;flex-direction:column;padding:20px 28px 32px;overflow-y:auto}
+.drawer-open .drawer{transform:none}
+.drawer-open .drawer-dim{opacity:1;visibility:visible}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;height:40px}
+.drawer-top .brand-mark{color:var(--gold-soft);font-size:22px}
+.drawer-close{background:none;border:0;color:#fff;width:40px;height:40px;font-size:28px;line-height:1;cursor:pointer}
+.drawer nav ul{list-style:none;margin-top:36px}
+.drawer nav a{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid #4A4436;text-decoration:none;font-size:18px;font-weight:600}
+.drawer nav a small{font-family:var(--en);font-size:15px;letter-spacing:.1em;color:var(--gold-soft);font-weight:400}
+.drawer nav a:hover{color:var(--gold-soft)}
+.drawer .drawer-cta{margin-top:auto;padding-top:32px}
+.drawer .drawer-cta a{display:block;text-align:center;background:var(--gold);color:var(--brown);font-weight:700;padding:14px;text-decoration:none}
+.drawer .drawer-cta p{margin-top:12px;font-size:12.5px;color:#A9A18F;text-align:center}
+body.drawer-open{overflow:hidden}
+
+/* 히어로 — PARK LIFE 형식 */
+.hero{position:relative;overflow:hidden;background:var(--brown);color:#fff}
+.hero img{width:100%;height:min(88vh,820px);min-height:560px;object-fit:cover;object-position:50% 45%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(30,27,20,.55) 0%,rgba(30,27,20,0) 42%,rgba(30,27,20,0) 62%,rgba(30,27,20,.65) 100%)}
+.hero-top{position:absolute;z-index:2;left:0;right:0;top:48px}
+.hero-top .en-display{color:#fff;font-size:clamp(64px,10vw,132px);letter-spacing:.06em}
+.hero-top p{margin-top:18px;font-size:clamp(17px,1.8vw,22px);font-weight:500}
+.hero-top p b{font-weight:800}
+.hero-bottom{position:absolute;z-index:2;left:0;right:0;bottom:40px}
+.hero-bottom .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.hero-bottom .lines{text-align:right;font-size:14.5px;font-weight:600;line-height:1.7;text-shadow:0 1px 4px rgba(0,0,0,.4)}
+.hero-cg{font-size:11px;opacity:.8}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-family:inherit;font-weight:600;font-size:15px;padding:13px 24px;border:1px solid transparent;cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--brown)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+@media (max-width:700px){
+  .hero img{height:86vh;min-height:620px;object-position:46% 50%}
+  .hero-top{top:32px}
+  .hero-bottom .wrap{flex-direction:column-reverse;align-items:flex-start}
+  .hero-bottom .lines{text-align:left;font-size:13.5px}
+}
+
+/* LOCATION 인트로 — 브라운 밴드 + 스크립트 워터마크 */
+.loc-intro{background:var(--brown);color:#fff;text-align:center;padding:84px 0 150px;position:relative;overflow:hidden}
+.loc-intro .script{position:absolute;left:50%;top:34px;transform:translateX(-50%);font-size:clamp(84px,12vw,140px);color:rgba(217,198,165,.16);white-space:nowrap;pointer-events:none}
+.loc-intro .kicker{position:relative;font-size:17px;font-weight:600;color:var(--gold-soft)}
+.loc-intro h2{position:relative;margin-top:8px;font-size:clamp(26px,3.4vw,38px);font-weight:800;line-height:1.35}
+.loc-intro p{position:relative;margin:22px auto 0;max-width:34em;font-size:15px;color:#D6CFC0}
+.map-card{position:relative;max-width:1080px;margin:-100px auto 0;padding:0 24px}
+.map-card figure{position:relative;background:#fff;border-radius:22px 22px 0 0;overflow:hidden;box-shadow:0 18px 40px rgba(30,27,20,.18)}
+.map-card img{width:100%}
+.map-card .more{position:absolute;left:0;bottom:0;background:var(--brown-2);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 18px;text-decoration:none}
+.map-notes{max-width:1080px;margin:0 auto;padding:18px 24px 56px;font-size:12.5px;color:var(--muted)}
+.map-notes li{list-style:none;padding-left:.9em;text-indent:-.9em;margin:3px 0}
+.map-notes li::before{content:"※ "}
+
+/* 이동시간 필 — 레퍼런스의 '15분대' 칩 */
+.times{background:var(--stone);padding:56px 0 64px}
+.times ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px 20px;max-width:760px;margin:0 auto}
+.times li{background:#fff;border-radius:999px;display:flex;align-items:center;gap:14px;padding:12px 26px 12px 12px}
+.times .ico{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center}
+.times .ico svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.times .place{font-size:18px;font-weight:700;flex:1}
+.times .val{font-family:var(--en);font-size:40px;font-weight:500;line-height:1;color:var(--brown)}
+.times .val small{font-family:var(--sans);font-size:15px;font-weight:700;margin-left:2px}
+.times .by{display:block;font-size:12px;color:var(--muted);font-weight:500}
+.times .c1{background:#8C7A5B}.times .c2{background:#B8976A}.times .c3{background:#6F7B6A}.times .c4{background:#9C8A9E}
+.times .note{max-width:760px;margin:18px auto 0;font-size:12.5px;color:var(--muted);text-align:right}
+@media (max-width:640px){.times ul{grid-template-columns:1fr}.times li{padding-right:22px}}
+
+/* 챕터 패널 — '세미원 옆 / 사계절 파크 라이프 / 05.' 형식 */
+.chapters{background:var(--stone-2);padding:72px 0 88px}
+.chapter{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;background:#fff;padding:40px 44px;border-right:10px solid var(--stone);max-width:1080px;margin:0 auto 18px}
+.chapter .sub{font-size:17px;color:var(--muted)}
+.chapter h3{font-size:clamp(22px,2.6vw,28px);font-weight:800;color:var(--brown);line-height:1.35}
+.chapter ul{list-style:none;margin-top:18px;font-size:15px;color:#4A453A}
+.chapter li{margin:5px 0}
+.chapter .no{font-family:var(--en);font-weight:300;font-style:italic;font-size:clamp(64px,8vw,96px);line-height:.8;color:var(--faint)}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 7px;margin-left:6px;vertical-align:1px}
+.tag-now{background:var(--brown);color:#fff}
+.tag-plan{border:1px solid var(--gold);color:#8A6D40}
+@media (max-width:700px){.chapter{grid-template-columns:1fr;padding:30px 24px}.chapter .no{justify-self:end;order:-1;margin-bottom:-10px}.chapters{padding:48px 16px 64px}}
+
+/* PREMIUM */
+.premium-head{padding:104px 0 56px;text-align:right}
+.premium-head .sub{font-size:17px;color:var(--muted)}
+.premium-head .name{font-size:20px;font-weight:700;color:#8A6D40;margin-top:10px}
+.premium-head .en-display{font-size:clamp(56px,9vw,112px);margin-top:14px;letter-spacing:.12em}
+.premium-head .rule{display:inline-block;width:56px;height:2px;background:var(--brown);margin-top:36px}
+.premium-img img{width:100%;max-height:640px;object-fit:cover;object-position:50% 40%}
+.premium-img figcaption{font-size:11.5px;color:var(--muted);text-align:right;padding:8px 24px 0}
+.spec-wrap{padding:72px 0 104px}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--brown);border-bottom:1px solid var(--line)}
+.stat-row div{padding:28px 12px;text-align:center}
+.stat-row div + div{border-left:1px solid var(--line)}
+.stat-row b{display:block;font-family:var(--en);font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1;color:var(--brown)}
+.stat-row span{display:block;margin-top:10px;font-size:14px;color:var(--muted)}
+.spec{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.spec div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.spec dt{color:var(--muted)}
+.fine{font-size:12.5px;color:var(--muted);margin-top:18px}
+@media (max-width:760px){.premium-img img{min-height:300px}.map-card{padding:0 12px}.stat-row{grid-template-columns:repeat(2,1fr)}.stat-row div:nth-child(3){border-left:0}.stat-row div:nth-child(n+3){border-top:1px solid var(--line)}.spec{grid-template-columns:1fr}.premium-head{text-align:center}}
+
+/* PROGRESS — 텍스처 다크 섹션 (BRAND PHILOSOPHY 형식) */
+.dark{position:relative;background-color:#34302A;color:#E8E3D8;padding:104px 0 112px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.dark .kicker{font-size:17px;font-weight:600;color:#D6CFC0}
+.dark h2{margin-top:18px;font-size:clamp(26px,3.4vw,38px);font-weight:800;line-height:1.4;color:#fff}
+.dark .en-label{margin-top:28px;font-family:var(--en);font-size:22px;letter-spacing:.18em;color:var(--gold-soft)}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#4E483D;margin:56px auto 64px;max-width:900px}
+.meta div{background:#34302A;padding:22px 20px;text-align:center}
+.meta dt{font-size:13px;color:#A9A18F}
+.meta dd{margin-top:6px;font-size:19px;font-weight:700;color:#fff}
+.steps{list-style:none;max-width:620px;margin:0 auto;position:relative}
+.steps::before{content:"";position:absolute;left:23px;top:10px;bottom:10px;width:1px;background:#5C5546}
+.steps li{position:relative;display:grid;grid-template-columns:48px 1fr auto;gap:0 20px;padding:0 0 30px}
+.steps .dot{width:47px;height:47px;border-radius:50%;display:grid;place-items:center;font-family:var(--en);font-size:20px;border:1px solid #6B6350;background:#34302A;color:#A9A18F;position:relative;z-index:1}
+.steps h3{font-size:17px;font-weight:700;color:#fff;padding-top:3px}
+.steps p{grid-column:2;font-size:13.5px;color:#A9A18F;margin-top:2px}
+.steps .when{grid-column:3;grid-row:1;text-align:right;font-size:14px;color:var(--gold-soft);padding-top:4px}
+.steps .state{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 8px;margin-left:8px;vertical-align:2px}
+.done .dot{background:var(--gold);border-color:var(--gold);color:var(--brown)}
+.done .state{background:var(--gold);color:var(--brown)}
+.next .dot{border-color:var(--gold);color:var(--gold)}
+.next .state{border:1px solid var(--gold);color:var(--gold)}
+.plan .state{border:1px solid #6B6350;color:#A9A18F}
+.dark .fine{color:#A9A18F;text-align:center;margin-top:24px}
+@media (max-width:640px){.meta{grid-template-columns:1fr}.steps li{grid-template-columns:48px 1fr}.steps .when{grid-column:2;grid-row:auto;text-align:left;padding-top:0}}
+
+/* GUIDE */
+.guide-sec{padding:104px 0}
+.guide-sec .en-display{font-size:clamp(48px,7vw,84px);letter-spacing:.12em}
+.guide-sec .head p{margin-top:14px;color:var(--muted)}
+.guide{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:48px}
+.guide article{background:var(--stone-2);padding:34px 32px}
+.guide h3{font-size:21px;font-weight:800;color:var(--brown)}
+.guide .basis{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+.guide ul{padding-left:1.1em;font-size:15px}
+.guide li{margin:7px 0}
+@media (max-width:760px){.guide{grid-template-columns:1fr}}
+
+/* CONTACT — 이미지 위 흰 카드 */
+.contact{position:relative;padding:96px 0;background:url("assets/perspective.jpg") center 30%/cover no-repeat}
+.contact::before{content:"";position:absolute;inset:0;background:rgba(43,39,29,.35)}
+.contact-card{position:relative;max-width:980px;margin:0 auto;background:#fff;display:grid;grid-template-columns:1fr 1.15fr;gap:48px;padding:56px 52px}
+.contact-card .en-display{font-size:clamp(46px,6vw,72px);letter-spacing:.12em;color:#8A6D40}
+.contact-card .lead{margin-top:16px;color:var(--muted)}
+.contact-card .tel{display:block;margin-top:28px;font-family:var(--en);font-size:40px;color:var(--brown);text-decoration:none}
+.contact-card .addr{margin-top:10px;font-size:14px;color:var(--muted)}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13.5px;font-weight:600;margin-bottom:5px}
+.field input,.field select{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid var(--line);background:#fff;border-radius:0}
+.field input:focus,.field select:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(184,151,106,.25)}
+.consent{font-size:13px;background:var(--stone-2);padding:13px 15px;margin:4px 0 12px}
+.consent dl{display:grid;grid-template-columns:72px 1fr;gap:3px 10px}
+.consent dt{color:var(--muted)}
+.check{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin-bottom:18px}
+.check input{margin-top:5px;width:16px;height:16px;accent-color:var(--brown)}
+.form .btn{width:100%;background:var(--brown);color:#fff}
+.form .btn:hover{background:var(--brown-2)}
+.form-msg{margin-top:10px;font-size:14px;min-height:1.4em}
+@media (max-width:860px){.contact{padding:48px 16px}.contact-card{grid-template-columns:1fr;padding:36px 22px;gap:32px}}
+
+/* 푸터 */
+.site-footer{background:#1F1C15;color:#A9A18F;font-size:13px;padding:48px 0 64px}
+.site-footer .brand-mark{color:var(--gold-soft)}
+.legal{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 40px;margin:22px 0}
+.legal b{color:#DDD5C4;font-weight:500;margin-right:6px}
+.disclaim{border-top:1px solid #3A3528;padding-top:18px;line-height:1.8}
+@media (max-width:700px){.legal{grid-template-columns:1fr}}
+
+.mobile-cta{display:none}
+@media (max-width:700px){
+  .mobile-cta{display:grid;grid-template-columns:1fr;position:fixed;left:0;right:0;bottom:0;z-index:60}
+  .mobile-cta a{text-align:center;padding:15px 0;font-weight:700;text-decoration:none}
+  .mobile-cta .c1{background:var(--gold);color:var(--brown)}
+  .mobile-cta .c2{background:var(--brown);color:#fff}
+  body{padding-bottom:52px}
+  .premium-head,.guide-sec{padding:72px 0 40px}
+  .dark{padding:72px 0 80px}
+}
+</style>
+</head>
+<body>
+
+<div class="notice-bar">본 광고는 주택법 제11조의5에 의거한 지역주택조합의 조합원 모집을 위한 광고입니다.</div>
+
+<header class="site-header">
+  <div class="bar">
+    <button class="menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer">
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="label">MENU</span>
+    </button>
+    <a class="brand" href="#top" aria-label="남성역 헤머튼 홈">
+      <span class="brand-mark">HEMATEN</span>
+      <span class="brand-sub">남성역 헤머튼 지역주택조합</span>
+    </a>
+    <a class="header-cta" href="#contact">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>방문예약하기
+    </a>
+  </div>
+</header>
+
+<div class="drawer-dim" data-close></div>
+<aside class="drawer" id="drawer" aria-label="전체 메뉴" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand-mark">HEMATEN</span>
+    <button class="drawer-close" data-close aria-label="메뉴 닫기">&times;</button>
+  </div>
+  <nav aria-label="주 메뉴">
+    <ul>
+      <li><a href="#location">입지환경 <small>LOCATION</small></a></li>
+      <li><a href="#premium">사업개요 <small>PREMIUM</small></a></li>
+      <li><a href="#progress">추진현황 <small>PROGRESS</small></a></li>
+      <li><a href="#guide">조합원 안내 <small>GUIDE</small></a></li>
+      <li><a href="#contact">방문예약 <small>CONTACT</small></a></li>
+    </ul>
+  </nav>
+  <div class="drawer-cta">
+    <a href="#contact">방문 예약하기</a>
+    <p>지역주택조합 조합원 모집 광고</p>
+  </div>
+</aside>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-label="메인">
+  <img src="assets/hero-2400.jpg" srcset="assets/hero-1200.jpg 1200w, assets/hero-2400.jpg 2400w" sizes="100vw"
+       alt="한강과 남산을 배경으로 한 남성역 헤머튼 단지 광역 조감도">
+  <div class="hero-top">
+    <div class="wrap">
+      <div class="en-display">HEMATEN</div>
+      <p>서울 프리미엄의 중심, <b>반포와 나란히 서다</b></p>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <div class="wrap">
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact">방문 예약하기</a>
+        <a class="btn btn-ghost" href="#progress">사업 진행 단계 보기</a>
+      </div>
+      <div class="lines">
+        7호선 남성역 역세권<br>
+        지하 4층~지상 39층, 6개동 934세대<br>
+        <span class="hero-cg">CG 이미지로 실제와 다를 수 있습니다</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" aria-labelledby="loc-title">
+  <div class="loc-intro">
+    <span class="script" aria-hidden="true">Location</span>
+    <p class="kicker">남성역 앞, 강남 옆</p>
+    <h2 id="loc-title">서반포 생활권을<br>역 앞에서 누리는 자리</h2>
+    <p>7호선 남성역과 4·7호선 이수역 사이, 서초대로와 서리풀터널로 강남에 곧게 닿습니다.</p>
+  </div>
+  <div class="map-card">
+    <figure>
+      <a href="assets/map.jpg" target="_blank" rel="noopener" aria-label="위치도 크게 보기"><img src="assets/map.jpg" alt="남성역 헤머튼 광역 위치도. 남성역 역세권 지구단위계획구역과 사당역 복합환승센터, GTX-D 계획 노선, 서리풀터널 경로 표시" loading="lazy"></a>
+      <a class="more" href="#chapters">MORE +</a>
+    </figure>
+  </div>
+  <ul class="map-notes">
+    <li>상기 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.</li>
+    <li>GTX-D, 사당역 복합환승센터는 계획 단계 사업으로 관계 기관 일정에 따라 변경·취소될 수 있습니다.</li>
+  </ul>
+
+  <div class="times" aria-label="주요 지점 이동 시간">
+    <ul>
+      <li><span class="ico c1"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></svg></span>
+        <span class="place">이수역<span class="by">7호선 환승</span></span><span class="val">1<small>정거장</small></span></li>
+      <li><span class="ico c2"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></svg></span>
+        <span class="place">강남구청<span class="by">지하철</span></span><span class="val">12<small>분</small></span></li>
+      <li><span class="ico c3"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></svg></span>
+        <span class="place">서울역<span class="by">지하철</span></span><span class="val">20<small>분</small></span></li>
+      <li><span class="ico c4"><svg viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4z"/><path d="M4 12h16"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/></svg></span>
+        <span class="place">강남역<span class="by">차량, 서리풀터널</span></span><span class="val">30<small>분</small></span></li>
+    </ul>
+    <p class="note">※ 남성역 기준 소요시간으로, 교통 상황에 따라 달라질 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 입지 챕터 -->
+<section class="chapters" id="chapters" aria-label="입지 상세">
+  <article class="chapter">
+    <div>
+      <p class="sub">남성역 150m</p>
+      <h3>역에서 가깝고,<br>강남으로 곧게</h3>
+      <ul>
+        <li>7호선 남성역 도보권 <span class="tag tag-now">현재</span></li>
+        <li>4·7호선 이수역 더블역세권 이용 <span class="tag tag-now">현재</span></li>
+        <li>사당역 복합환승센터 ('34년 완공 목표) <span class="tag tag-plan">계획</span></li>
+        <li>GTX-D ('35년 착공 예정) <span class="tag tag-plan">계획</span></li>
+      </ul>
+    </div>
+    <span class="no" aria-hidden="true">01.</span>
+  </article>
+  <article class="chapter">
+    <div>
+      <p class="sub">남성도시개발관리 가이드라인 2권역</p>
+      <h3>남성역 일대가<br>새로 정비되는 흐름 속</h3>
+      <ul>
+        <li>동작구 도시개발 가이드라인 포함 ('24.11 게시) <span class="tag tag-now">현재</span></li>
+        <li>사당12구역 신통기획 정비구역 지정 <span class="tag tag-now">현재</span></li>
+        <li>사당15·16구역 신통기획 <span class="tag tag-plan">추진중</span></li>
+        <li>2권역 약 16개 단지, 1만여 세대 <span class="tag tag-plan">계획</span></li>
+      </ul>
+    </div>
+    <span class="no" aria-hidden="true">02.</span>
+  </article>
+  <article class="chapter">
+    <div>
+      <p class="sub">까치산공원·현충원 옆</p>
+      <h3>학교와 공원이<br>모두 걸어서</h3>
+      <ul>
+        <li>행림초 배정 예정, 1km 내 상급학교</li>
+        <li>중앙대·숭실대·총신대 인접</li>
+        <li>한강시민공원 약 1.5km</li>
+        <li>남성역 골목시장, 이수·사당역 상권</li>
+      </ul>
+    </div>
+    <span class="no" aria-hidden="true">03.</span>
+  </article>
+</section>
+
+<!-- PREMIUM / 사업개요 -->
+<section id="premium" aria-labelledby="prem-title">
+  <div class="wrap premium-head">
+    <p class="sub">역 앞에 세우는 39층, 6개동</p>
+    <p class="name" id="prem-title">남성역 헤머튼</p>
+    <div class="en-display">PREMIUM</div>
+    <span class="rule" aria-hidden="true"></span>
+  </div>
+  <figure class="premium-img">
+    <img src="assets/perspective.jpg" alt="남성역 헤머튼 투시도. 남성역 사인 옆으로 고층 주동 4개가 보이는 저녁 전경" loading="lazy">
+    <figcaption>투시도 · 계획안으로 인허가 과정에서 변경될 수 있습니다</figcaption>
+  </figure>
+  <div class="wrap spec-wrap">
+    <div class="stat-row">
+      <div><b>934</b><span>총 세대</span></div>
+      <div><b>39</b><span>최고 층수</span></div>
+      <div><b>6</b><span>개동</span></div>
+      <div><b>1.34</b><span>세대당 주차</span></div>
+    </div>
+    <dl class="spec">
+      <div><dt>대지위치</dt><dd>서울 동작구 사당동 277-1번지 일원</dd></div>
+      <div><dt>용도지역</dt><dd>준주거지역 (지구단위계획구역)</dd></div>
+      <div><dt>대지면적</dt><dd>26,387.50㎡ (7,982.22평)</dd></div>
+      <div><dt>건폐율 / 용적률</dt><dd>32.34% / 499.82%</dd></div>
+      <div><dt>건축규모</dt><dd>지하 4층 ~ 지상 최고 39층</dd></div>
+      <div><dt>주차대수</dt><dd>총 1,252대</dd></div>
+      <div><dt>타입</dt><dd>59A 338 · 59B 140 · 84A 386 · 84B 70세대</dd></div>
+      <div><dt>사업방식</dt><dd>역세권 장기전세주택<br><span style="color:var(--muted);font-size:13.5px">장기전세(SHIFT) 168세대 포함</span></dd></div>
+      <div><dt>커뮤니티</dt><dd>피트니스·골프연습장, 어린이집·돌봄, 경로당·작은도서관</dd></div>
+      <div><dt>상품</dt><dd>풀옵션 가전 기본 제공, 스마트홈 시스템</dd></div>
+    </dl>
+    <p class="fine">지구단위 접수 기준 계획안이며 인허가 과정에서 변경될 수 있습니다. 타입별 세대수는 장기전세(SHIFT) 세대를 포함합니다.</p>
+  </div>
+</section>
+
+<!-- PROGRESS -->
+<section class="dark center" id="progress" aria-labelledby="prog-title">
+  <div class="wrap">
+    <p class="kicker">지역주택조합은 단계마다 요건이 있습니다</p>
+    <h2 id="prog-title">지금 어디까지 왔는지,<br>숨기지 않고 보여드립니다</h2>
+    <p class="en-label">PROJECT PROGRESS</p>
+
+    <dl class="meta">
+      <div><dt>조합원 모집 신고</dt><dd>2025.09.30 변경신고</dd></div>
+      <div><dt>신고 기준 조합원 수</dt><dd>535명</dd></div>
+      <div><dt>토지 확보율</dt><dd><span class="todo">확인 필요</span></dd></div>
+    </dl>
+
+    <ol class="steps" style="text-align:left">
+      <li class="done"><span class="dot">1</span><h3>지구단위 사전검토<span class="state">완료</span></h3><span class="when">2023.11.09</span><p>서울시 역세권 장기전세주택 사전검토</p></li>
+      <li class="done"><span class="dot">2</span><h3>조합원 모집 신고<span class="state">완료</span></h3><span class="when">2025.09.30</span><p>최초 '24.06.24, 변경 '25.09.30</p></li>
+      <li class="next"><span class="dot">3</span><h3>지구단위 접수<span class="state">확인 중</span></h3><span class="when"><span class="todo">확인 필요</span></span><p>토지면적 2/3 이상 소유자 동의</p></li>
+      <li class="plan"><span class="dot">4</span><h3>건축심의 접수<span class="state">예정</span></h3><span class="when">2026.12</span><p>구역 내 토지면적 2/3 이상 동의</p></li>
+      <li class="plan"><span class="dot">5</span><h3>조합설립인가<span class="state">예정</span></h3><span class="when">2027 상반기</span><p>주택건설대지 80% 이상 토지사용승낙</p></li>
+      <li class="plan"><span class="dot">6</span><h3>사업계획승인<span class="state">예정</span></h3><span class="when">2028 상반기</span><p>대지면적 95% 이상 소유권 확보</p></li>
+      <li class="plan"><span class="dot">7</span><h3>착공<span class="state">예정</span></h3><span class="when">2029 상반기</span><p>시공사 선정 후 진행</p></li>
+    </ol>
+    <p class="fine">예정 일정은 계획이며 동의율 확보와 인허가 결과에 따라 지연될 수 있습니다. 시공사는 아직 선정되지 않았습니다.</p>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section class="guide-sec" id="guide" aria-labelledby="guide-title">
+  <div class="wrap">
+    <div class="head center">
+      <div class="en-display" aria-hidden="true">GUIDE</div>
+      <h2 id="guide-title" style="font-size:clamp(22px,2.6vw,28px);font-weight:800;color:var(--brown);margin-top:18px">가입 전에 꼭 확인하세요</h2>
+      <p>조합원 자격과 철회 기준은 법으로 정해져 있습니다.</p>
+    </div>
+    <div class="guide">
+      <article>
+        <h3>조합원 자격</h3>
+        <p class="basis">조합설립인가 신청일 기준</p>
+        <ul>
+          <li>만 19세 이상 세대주</li>
+          <li>서울·경기·인천 6개월 이상 계속 거주</li>
+          <li>무주택 또는 전용 85㎡ 이하 1주택 소유</li>
+          <li>본인·배우자·부모 중 85㎡ 초과 주택 보유 시 불가 (60세 이상 부모 예외)</li>
+        </ul>
+      </article>
+      <article>
+        <h3>가입 철회</h3>
+        <p class="basis">주택법 제11조의6</p>
+        <ul>
+          <li>가입비 등을 예치한 날부터 30일 이내 청약 철회 가능</li>
+          <li>계약금 전액 입금일의 다음 날부터 30일 산정</li>
+          <li>조합원 모집가와 분담금은 방문 상담 시 서면 안내</li>
+          <li>사업 진행에 따라 추가 분담금이 발생할 수 있습니다</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="contact-card">
+    <div>
+      <div class="en-display" aria-hidden="true">CONTACT</div>
+      <h2 id="contact-title" style="margin-top:16px;font-size:22px;font-weight:800;color:var(--brown)">홍보관 방문 예약</h2>
+      <p class="lead">원하시는 날짜를 남겨주시면 상담 시간을 확정해 연락드립니다.</p>
+      <a class="tel" href="tel:"><span class="todo" style="font-family:var(--sans);font-size:18px">대표번호 확인 필요</span></a>
+      <p class="addr">홍보관 위치 <span class="todo">확인 필요</span></p>
+      <p class="addr">조합 사무소 · 서울 동작구 사당로16길 28, 2층</p>
+    </div>
+
+    <!-- 폼 연동 전: action 을 Google Apps Script 또는 Formspree 주소로 교체 -->
+    <form class="form" id="reserveForm" action="" method="post" novalidate>
+      <div class="field"><label for="f-name">이름</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="f-tel">연락처</label><input id="f-tel" name="tel" type="tel" inputmode="numeric" autocomplete="tel" placeholder="010-0000-0000" required></div>
+      <div class="field"><label for="f-date">희망 방문일</label><input id="f-date" name="date" type="date" required></div>
+      <div class="field"><label for="f-type">관심 타입</label>
+        <select id="f-type" name="type"><option value="">선택 안 함</option><option>59㎡</option><option>84㎡</option></select></div>
+      <div class="consent" aria-label="개인정보 수집·이용 안내">
+        <dl>
+          <dt>수집 항목</dt><dd>이름, 연락처, 희망 방문일, 관심 타입</dd>
+          <dt>이용 목적</dt><dd>홍보관 방문 일정 안내 및 상담</dd>
+          <dt>보유 기간</dt><dd><span class="todo">확인 필요</span> 후 파기</dd>
+          <dt>처리 위탁</dt><dd><span class="todo">확인 필요</span></dd>
+        </dl>
+        <p style="margin-top:6px;color:var(--muted)">동의를 거부할 수 있으며, 거부 시 방문 예약이 제한됩니다.</p>
+      </div>
+      <label class="check"><input type="checkbox" name="agree" id="f-agree" required> 개인정보 수집·이용에 동의합니다 (필수)</label>
+      <button class="btn" type="submit">방문 예약 신청</button>
+      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="brand-mark">HEMATEN</span>
+    <div class="legal">
+      <div><b>현장명</b>남성역 헤머튼 지역주택조합</div>
+      <div><b>현장위치</b>서울특별시 동작구 사당동 277-1번지 일원</div>
+      <div><b>시행</b>동작남성역 지역주택조합 추진위원회</div>
+      <div><b>업무대행</b>㈜동명디앤씨</div>
+      <div><b>자금관리</b>우리자산신탁</div>
+      <div><b>조합원 모집 신고</b>2024-핵심정책추진단-지역주택조합모집-1 (동작구청, '25.09.30 변경)</div>
+      <div><b>조합 사무소</b>서울특별시 동작구 사당로16길 28, 2층</div>
+      <div><b>사업부지 확보 현황</b><span class="todo">확인 필요</span></div>
+      <div><b>사이트 운영</b><span class="todo">운영 주체 표시 확인 필요</span></div>
+    </div>
+    <div class="disclaim">
+      ※ 본 광고는 주택법 제11조의5(조합원 모집광고 등에 관한 준수사항)에 의거한 지역주택조합의 조합원 모집을 위한 광고입니다.<br>
+      ※ 본 계획안(이미지)은 이해를 돕기 위한 계획안으로 확정된 계획이 아닙니다. 향후 사업계획 승인 및 인허가 과정에서 변경될 수 있습니다.<br>
+      ※ 본 사이트의 CG, 지도, 이미지는 소비자의 이해를 돕기 위해 제작된 것으로 실제와 다를 수 있습니다.<br>
+      <a href="#" style="color:#DDD5C4">개인정보처리방침</a> <span class="todo">페이지 제작 필요</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="빠른 연락">
+  <a class="c1" href="tel:">전화 상담하기</a>
+</nav>
+
+<script>
+const btn = document.querySelector('.menu-btn');
+const drawer = document.getElementById('drawer');
+function setDrawer(open){
+  document.body.classList.toggle('drawer-open', open);
+  btn.setAttribute('aria-expanded', open);
+  drawer.setAttribute('aria-hidden', !open);
+  if (open) drawer.querySelector('.drawer-close').focus(); else btn.focus();
+}
+btn.addEventListener('click', () => setDrawer(true));
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => setDrawer(false)));
+drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  document.body.classList.remove('drawer-open'); btn.setAttribute('aria-expanded', false); drawer.setAttribute('aria-hidden', true);
+}));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && document.body.classList.contains('drawer-open')) setDrawer(false); });
+
+document.getElementById('f-date').min = new Date().toISOString().slice(0, 10);
+
+const form = document.getElementById('reserveForm');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const tel = form.tel.value.replace(/[^0-9]/g, '');
+  if (!form.name.value.trim()) { msg.textContent = '이름을 입력해 주세요.'; form.name.focus(); return; }
+  if (!/^01[0-9]{8,9}$/.test(tel)) { msg.textContent = '연락처를 010-0000-0000 형식으로 입력해 주세요.'; form.tel.focus(); return; }
+  if (!form.date.value) { msg.textContent = '희망 방문일을 선택해 주세요.'; form.date.focus(); return; }
+  if (!form.agree.checked) { msg.textContent = '개인정보 수집·이용에 동의해야 예약할 수 있습니다.'; form.agree.focus(); return; }
+  if (!form.getAttribute('action')) { msg.textContent = '입력 확인 완료. 아직 전송 주소가 연결되지 않아 저장되지 않았습니다.'; return; }
+  form.submit();
+});
+</script>
+</body>
+</html>
